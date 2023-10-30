@@ -1,17 +1,4 @@
-function isEven(num){
-  if (num % 2 === 0) {
-    console.log('true');
-    return true;
-  } else { 
-    console.log('false');
-    return false;
-  }
-}function isEven(num){
-  if (num % 2 === 0) {
-    console.log('true');
-    return true;
-  } else { 
-    console.log('false');
-    return false;
-  }
-}# -
+function getVowels(str) {
+  var m = str.match(/[aeiou]/gi);
+  return m === null ? 0 : m.length;
+}
