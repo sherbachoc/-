@@ -1,4 +1,6 @@
-function getVowels(str) {
-  var m = str.match(/[aeiou]/gi);
-  return m === null ? 0 : m.length;
-}
+const countVowels = str => Array.from(str)
+  .filter(letter => 'aeiou'.includes(letter)).length;
+
+console.log(countVowels('abcdefghijklmnopqrstuvwxyz')); // 5
+console.log(countVowels('test')); // 1
+console.log(countVowels('ddd')); // 0
